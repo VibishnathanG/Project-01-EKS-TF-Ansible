@@ -1,2 +1,4 @@
-.terrafomr/*
+.terraform/*
 .terraform.lock.hcl
+.log
+JenkinsServer/.terraform/*
