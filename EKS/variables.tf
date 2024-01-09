@@ -1,17 +1,17 @@
 variable "cidr" {
-    type = string
-    description = "CIDR for VPC"
+  type        = string
+  description = "CIDR for VPC"
 }
 
 variable "public_subnets" {
-    type = list(string)
-    description = "List pf public subnets"
-  
+  type        = list(string)
+  description = "List pf public subnets"
+
 }
 
 variable "privat_subnets" {
-    type = list(string)
-    description = "List pf private subnets"
-  
+  type        = list(string)
+  description = "List pf private subnets"
+
 }
 

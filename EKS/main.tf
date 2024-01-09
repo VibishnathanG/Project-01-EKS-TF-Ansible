@@ -1,12 +1,12 @@
 # Creation of VPC for EKS
 
 module "vpc" {
-  source                  = "terraform-aws-modules/vpc/aws"
-  name                    = "VPC-Jenkins"
-  cidr                    = var.cidr
-  azs                     = data.aws_availability_zones.azs.names
-  public_subnets          = var.public_subnets
-  private_subnets = var.privat_subnets
+  source               = "terraform-aws-modules/vpc/aws"
+  name                 = "VPC-Jenkins"
+  cidr                 = var.cidr
+  azs                  = data.aws_availability_zones.azs.names
+  public_subnets       = var.public_subnets
+  private_subnets      = var.privat_subnets
   enable_dns_hostnames = true
   enable_nat_gateway   = true
   single_nat_gateway   = true
