@@ -13,16 +13,3 @@ variable instance_type {
   type        = string
   description = "Type Of instance for this activity"
 }
-
-
-
-variable cidr {
-  type        = string
-  description = "description"
-}
-
-
-variable cidr {
-  type        = string
-  description = "description"
-}
