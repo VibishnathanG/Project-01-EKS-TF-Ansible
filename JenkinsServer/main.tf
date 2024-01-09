@@ -26,7 +26,7 @@ module "vpc" {
 module "vote_service_sg" {
   source = "terraform-aws-modules/security-group/aws"
 
-  name        = "sg-jenkinsServer"
+  name        = "jenkinsServer-sg"
   description = "sg for jenkins Server"
   vpc_id      = module.vpc.vpc_id
   ingress_with_cidr_blocks = [
