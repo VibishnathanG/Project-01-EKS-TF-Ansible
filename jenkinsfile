@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout SCM'){
             steps{
                 script{
-                    checkout scmGit(branches: [[name: '*/Dev']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/VibishnathanG/Project-01-EKS-TF-Ansible.git']])
+                    checkout scmGit(branches: [[name: '*/Dev']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/VibishnathanG/Project-01-EKS-TF-Jenkins.git']])
                 }
             }
         }
