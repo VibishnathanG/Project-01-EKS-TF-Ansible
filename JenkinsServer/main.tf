@@ -4,7 +4,7 @@ module "vpc" {
   source                  = "terraform-aws-modules/vpc/aws"
   name                    = "VPC-Jenkins"
   cidr                    = var.cidr
-  azs                     = data.aws_ami.example
+  azs                     = data.aws_availability_zones.azs.names
   public_subnets          = var.public_subnets
   map_public_ip_on_launch = true
   enable_dns_hostnames    = true
@@ -65,7 +65,7 @@ module "ec2_instance" {
   subnet_id                   = module.vpc.public_subnets[0]
   associate_public_ip_address = true
   user_data                   = file("jenkins-install.sh")
-  availability_zone           = data.aws_availability_zones.available[0]
+  availability_zone           = data.aws_availability_zones.azs.names[0]
 
   tags = {
     name        = "Jenkins-Server-Project"

@@ -4,7 +4,7 @@ variable "cidr" {
 }
 
 variable "public_subnets" {
-  type        = string
+  type        = list(string)
   description = "Public Subnet for JenkinsServer VPC"
 }
 
