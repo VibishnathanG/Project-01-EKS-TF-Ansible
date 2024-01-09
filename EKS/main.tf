@@ -6,7 +6,7 @@ module "vpc" {
   cidr                 = var.cidr
   azs                  = data.aws_availability_zones.azs.names
   public_subnets       = var.public_subnets
-  private_subnets      = var.privat_subnets
+  private_subnets      = var.private_subnets
   enable_dns_hostnames = true
   enable_nat_gateway   = true
   single_nat_gateway   = true
