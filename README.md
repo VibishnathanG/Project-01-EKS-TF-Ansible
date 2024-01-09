@@ -2,7 +2,7 @@
 
 ## Overview 📚
 
-This project utilizes Amazon Elastic Kubernetes Service (EKS), Terraform, and Ansible to automate the deployment and management of infrastructure and applications.
+This project utilizes Amazon Elastic Kubernetes Service (EKS), Terraform, and Jenkins to automate the deployment and management of infrastructure and applications.
 
 ## Amazon Elastic Kubernetes Service (EKS) ☁️
 
@@ -57,7 +57,7 @@ Jenkins is an open-source CICD Tool for setting up pipeline to automate the vari
 
 Follow the steps below to get started with this project:
 
-1. **Clone the Repository**: `git clone https://github.com/VibishnathanG/Project-01-EKS-TF-Ansible.git`
+1. **Clone the Repository**: `git clone https://github.com/VibishnathanG/Project-01-EKS-TF-Jenkins.git`
 2. **Install Dependencies**: Follow the instructions in the documentation for each technology stack to install the necessary dependencies.
 3. **Run the Automation Scripts**: Execute the provided scripts or commands to deploy infrastructure and applications.
 
