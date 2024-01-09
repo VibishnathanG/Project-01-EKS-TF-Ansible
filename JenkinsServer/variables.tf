@@ -1,15 +1,15 @@
-variable cidr {
+variable "cidr" {
   type        = string
   description = "VPC-CIDR-JenkinsServer VPC"
 }
 
-variable public_subnets {
+variable "public_subnets" {
   type        = string
   description = "Public Subnet for JenkinsServer VPC"
 }
 
 
-variable instance_type {
+variable "instance_type" {
   type        = string
   description = "Type Of instance for this activity"
 }

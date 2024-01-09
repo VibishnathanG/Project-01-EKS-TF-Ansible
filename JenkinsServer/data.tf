@@ -5,8 +5,8 @@ data "aws_availability_zones" "available" {
 
 #Declaring Data Source for AMI Fetching
 data "aws_ami" "example" {
-  most_recent      = true
-  owners           = ["amazon"]
+  most_recent = true
+  owners      = ["amazon"]
 
   filter {
     name   = "name"
