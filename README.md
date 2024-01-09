@@ -1,4 +1,4 @@
-# Project-01-EKS-TF-Ansible 🌐
+# Project-01-EKS-TF-Jenkins 🌐
 
 ## Overview 📚
 
@@ -36,21 +36,22 @@ Terraform is an open-source Infrastructure as Code (IaC) tool that allows you to
 
 [Terraform Documentation](https://www.terraform.io/docs/index.html)
 
-## Ansible 🤖
+## Jenkins 🤖
 
 ### Description 📝
 
-Ansible is an open-source automation tool that simplifies configuration management, application deployment, and task automation.
+Jenkins is an open-source CICD Tool for setting up pipeline to automate the various stages in SDLC.
 
 ### Key Features 🔑
 
-- Agentless
-- Playbooks
-- Extensibility
+- Web Based Interface
+- Easy to Setup
+- IAM Supported
+- WideRange of plugins
 
 ### Learn More 📘
 
-[Ansible Documentation](https://docs.ansible.com/)
+[Jenkins Documentation].(https://www.jenkins.io/doc/).
 
 ## Getting Started 🚀
 
