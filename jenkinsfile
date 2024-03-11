@@ -1,10 +1,5 @@
 pipeline {
     agent any
-    environment {
-        AWS_ACCESS_KEY_ID = credentials('204b92e8-5955-4c3a-ba37-e01af5c5dc14')
-        AWS_SECRET_ACCESS_KEY = credentials('22640d3b-73de-4cf9-9562-7b8ea0e06e24')
-        AWS_DEFAULT_REGION = "ap-south-1"
-    }
     stages {
         stage('Checkout SCM'){
             steps{
@@ -54,7 +49,9 @@ pipeline {
             steps{
                 script{
                     dir('EKS') {
-                        sh 'terraform $action --auto-approve'
+                        withCredentials([aws(credentialsId: "AWS_Creds")]) {
+                            sh 'terraform $action --auto-approve'
+                        }
                     }
                 }
             }
@@ -63,7 +60,7 @@ pipeline {
             steps{
                 script{
                     dir('EKS/configuration-yml') {
-                        sh 'aws eks update-kubeconfig --name my-eks-cluster'
+                        sh 'aws eks update-kubeconfig --name pc-eks'
                         sh 'kubectl apply -f deployment.yaml'
                         sh 'kubectl apply -f service.yaml'
                     }
